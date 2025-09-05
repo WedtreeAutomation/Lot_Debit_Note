@@ -633,6 +633,14 @@ with st.sidebar:
             st.markdown("</div>", unsafe_allow_html=True)
         
         st.markdown("</div>", unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.header("🔗 Related Applications")
+        st.markdown("""
+        - [Inventory Debit Note](https://inventory-debit-note.streamlit.app/)
+        - [Lot Debit Note](https://lot-debit-note.streamlit.app/)
+        - [Lot Credit Note](https://lot-credit-note.streamlit.app/)
+        """)
         
         # Process Indicator
         if st.session_state.logged_in and st.session_state.odoo_connected:
