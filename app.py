@@ -650,40 +650,40 @@ with st.sidebar:
         st.markdown("---")
         st.header("🔗 Related Applications")
             
-            # Attractive button links
-            st.markdown('<div class="button-container">', unsafe_allow_html=True)
+        # Attractive button links
+        st.markdown('<div class="button-container">', unsafe_allow_html=True)
+        
+        if st.markdown("""
+            <a href="https://inventory-debit-note.streamlit.app/" target="_blank">
+                <div class="app-button app-button-inventory">
+                    <span class="button-icon">📦</span>
+                    Inventory Debit Note
+                </div>
+            </a>
+        """, unsafe_allow_html=True):
+            pass            
             
-            if st.markdown("""
-                <a href="https://inventory-debit-note.streamlit.app/" target="_blank">
-                    <div class="app-button app-button-inventory">
-                        <span class="button-icon">📦</span>
-                        Inventory Debit Note
-                    </div>
-                </a>
-            """, unsafe_allow_html=True):
-                pass
+        if st.markdown("""
+            <a href="https://lot-debit-note.streamlit.app/" target="_blank">
+                <div class="app-button app-button-lot-debit">
+                    <span class="button-icon">🏷️</span>
+                      Lot Debit Note
+                </div>
+              </a>
+         """, unsafe_allow_html=True):
+            pass
             
-            if st.markdown("""
-                <a href="https://lot-debit-note.streamlit.app/" target="_blank">
-                    <div class="app-button app-button-lot-debit">
-                        <span class="button-icon">🏷️</span>
-                        Lot Debit Note
-                    </div>
-                </a>
-            """, unsafe_allow_html=True):
-                pass
+        if st.markdown("""
+            <a href="https://lot-credit-note.streamlit.app/" target="_blank">
+                  <div class="app-button app-button-lot-credit">
+                    <span class="button-icon">💰</span>
+                      Lot Credit Note
+                </div>
+            </a>
+          """, unsafe_allow_html=True):
+            pass
             
-            if st.markdown("""
-                <a href="https://lot-credit-note.streamlit.app/" target="_blank">
-                    <div class="app-button app-button-lot-credit">
-                        <span class="button-icon">💰</span>
-                        Lot Credit Note
-                    </div>
-                </a>
-            """, unsafe_allow_html=True):
-                pass
-            
-            st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
         
         # Process Indicator
         if st.session_state.logged_in and st.session_state.odoo_connected:
