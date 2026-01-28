@@ -320,9 +320,7 @@ st.markdown("""
     a{
         text-decoration: none !important;
     }
-</style>
-    </style>
-""", unsafe_allow_html=True)
+    </style>""", unsafe_allow_html=True)
 
 # Initialize session state
 if 'logged_in' not in st.session_state:
